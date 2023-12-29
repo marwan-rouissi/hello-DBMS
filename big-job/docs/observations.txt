@@ -1,0 +1,22 @@
+Les pays les plus pollueurs sont la Chine, les États-Unis, l'Inde, la Russie, le Japon, l'Allemagne, l'Iran, la Corée du Sud, l'Arabie Saoudite et le Canada.
+Les pays les moins pollueurs sont le Congo, la Somalie, le Burundi, le Tchad, le Niger, le Rwanda, le Mali, le Mozambique, l'Éthiopie et le Malawi.
+Les pays les plus écologiques sont le Brésil, le Canada, la Russie, la Chine, l'Inde, les États-Unis, l'Indonésie, l'Australie, l'Argentine et le Pakistan.
+Les pays les moins écologiques sont le Burundi, le Tchad, le Niger, la Somalie, le Congo, le Mali, le Rwanda, le Mozambique, l'Éthiopie et le Malawi.
+Les pays les plus équilibrés sont le Congo, la Somalie, le Burundi, le Tchad, le Niger, le Rwanda, le Mali, le Mozambique, l'Éthiopie et le Malawi.
+Les pays les moins équilibrés sont la Chine, les États-Unis, l'Inde, la Russie, le Japon, l'Allemagne, l'Iran, la Corée du Sud, l'Arabie Saoudite et le Canada.
+
+Les continents les plus pollueurs sont l'Asie, l'Amérique du Nord, l'Europe, l'Amérique du Sud et l'Afrique.
+Les continents les moins pollueurs sont l'Océanie, l'Antarctique et l'Arctique.
+Les continents les plus écologiques sont l'Amérique du Sud, l'Amérique du Nord, l'Europe, l'Asie et l'Afrique.
+Les continents les moins écologiques sont l'Océanie, l'Antarctique et l'Arctique.
+Les continents les plus équilibrés sont l'Océanie, l'Antarctique et l'Arctique.
+Les continents les moins équilibrés sont l'Asie, l'Amérique du Nord, l'Europe, l'Amérique du Sud et l'Afrique."
+
+
+Conclusion :
+Les pays les plus pollueurs sont les pays les plus développés, les pays les moins pollueurs sont les pays les moins développés.
+Les pays les plus écologiques sont les pays les moins développés, les pays les moins écologiques sont les pays les plus développés.
+Les pays les plus équilibrés sont les pays les moins développés, les pays les moins équilibrés sont les pays les plus développés.
+Les continents les plus pollueurs sont les continents les plus développés, les continents les moins pollueurs sont les continents les moins développés.
+Les continents les plus écologiques sont les continents les moins développés, les continents les moins écologiques sont les continents les plus développés.
+Les continents les plus équilibrés sont les continents les moins développés, les continents les moins équilibrés sont les continents les plus développés.

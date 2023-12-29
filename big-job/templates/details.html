@@ -1,0 +1,40 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<a class="home" href="/">Home Page</a>
+    <h1>{% block title %} {{ title }} {% endblock %}</h1>
+    <div class="table">
+        <h2> Choisir un pays/continent: </h2> 
+        <form action="/details" method="POST">
+            <SELECT class="list" name="country">
+                <option value="none">select a country</option>
+            {% for c in countryList %}
+                <option value="{{ c }}">{{ c }}</option>
+            {% endfor %}
+            </SELECT>
+            <button type="submit" class="btn">Submit</button>
+        </form>
+        <h3> Détails de la production d’électricité: </h3>
+            <table class="center" border="1" cellpadding="5" cellspacing="5">
+                <th> Production source </th>
+                <th> Utilization % </th>
+                <th> Median gCO2/kWh </th>
+                <th> Emission contribution gCO2/kWh </th>
+                    {% for r in result %}
+                    <tr>
+                        <td>{{ r }}</td>
+                        <td>{{ result[r][0] }}</td>
+                        <td>{{ result[r][1] }}</td>
+                        <td>{{ result[r][2] }}</td>
+                    </tr>
+                    {% endfor %}
+            </table>
+        <h3> Émissions totale des différentes sources: </h3>
+            <table class="center" border="1" cellpadding="5" cellspacing="5">
+                <th> Total emission gCO2/kWh </th>
+                    <tr>
+                        <td>{{ total_emission }}</td>
+                    </tr>
+            </table>
+    </div>
+{% endblock %}

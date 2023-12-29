@@ -1,0 +1,35 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<a class="home" href="/">Home Page</a>
+    <h1>{% block title %} {{ title }} {% endblock %}</h1>
+    <div class="table">
+        <h2> Choisir un pays/continent: </h2> 
+        <form action="/year" method="POST">
+            <SELECT class="list" name="country">
+                <option value="none">select a country</option>
+            {% for c in countryList %}
+                <option value="{{ c }}">{{ c }}</option>
+            {% endfor %}
+            </SELECT>
+            <input type="number" name="electricity_consumption" placeholder="electricity consumption (kw)">
+            <button type="submit" class="btn">Submit</button>
+        </form>
+        <h3> Émissions annuelles totales de CO2 pour la production d’électricité consommée de {{ electicity_consumption }} kW : </h3>
+            <table class="center" border="1" cellpadding="5" cellspacing="5">
+                <th> Total emission kgCO2/kWh </th>
+                <th> Total emission kgCO2/year </th>
+                    <tr>
+                        <td>{{ total_emission }}</td>
+                        <td>{{ total_emission_per_year }}</td>
+                    </tr>
+            </table>
+        <h3> Sachant qu’un arbre absorbe environ 25 kg de CO2 par an, voici le nombre nécessaire d’arbres à planter afin d’absorber le CO2 engendré :</h3>
+            <table class="center" border="1" cellpadding="5" cellspacing="5">
+                <th> Trees needed </th>
+                    <tr>
+                        <td>{{ trees_needed }}</td>
+                    </tr>
+            </table>
+    </div>
+{% endblock %}

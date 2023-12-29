@@ -1,0 +1,98 @@
+h1 {
+    border: 2px #eee solid;
+    color: brown;
+    text-align: center;
+    padding: 10px;
+    text-decoration: underline;
+}
+
+h2 {
+
+    text-decoration: underline;
+}
+
+.home {
+    border: 2px #eee solid;
+    color: black;
+    padding: 10px;
+}
+
+body {
+    background-color: floralwhite;
+    color: black;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: large;
+    
+}
+
+.appercu {
+    display: flex;
+}
+
+/* .table {
+    border: 1px solid black;
+    color: brown;
+    text-align: center;
+    padding: 10px;
+    margin-left: auto;
+    margin-right: auto;
+} */
+
+.center {
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+    border: 1px solid whitesmoke;
+    padding: 10px;
+    color: whitesmoke;
+    background-color: black;
+}
+
+.list {
+    border: 2px #eee solid;
+    color: rgb(70, 5, 5);
+    text-align: center;
+    padding: 10px;
+    font-size: large;
+}
+
+input {
+    border: 2px #eee solid;
+    color: rgb(70, 5, 5);
+    text-align: center;
+    padding: 10px;
+    font-size: large;
+    width: 17%;
+}
+
+.btn {
+    background-color: rgb(70, 5, 5);
+    color: whitesmoke;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    opacity: 0.9;
+    border-radius: 10px;
+}
+
+.btn:hover {
+    opacity: 1;
+    color: rgb(70, 5, 5);
+    background-color: whitesmoke;
+}
+
+select.list {
+    color: white;
+    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    background-color: black;
+    border: 2px #eee solid;
+    border-radius: 10px;
+
+}
+
+option {
+    color: white;
+    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    background-color: black;
+}

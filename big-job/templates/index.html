@@ -1,0 +1,73 @@
+{% extends 'base.html' %}
+
+{% block content %}
+    <h1>{% block title %} {{ title }} {% endblock %}</h1>
+    <h2> Contexte: </h2>
+        {% for line in context %}
+        <p>{{ line }}</p>
+        {% endfor %}
+
+    <div class="appercu">
+        <div class="table">
+            <h3> Aperçu de la Table World: </h3>
+                <table class="center" border="1" cellpadding="5" cellspacing="5">
+                    {% for h in w_headers %}
+                        <th>{{ h }}</th>
+                    {% endfor %}
+                    {% for w in world %}
+                        <tr>
+                            <td>{{ w.Country }}</td>
+                            <td>{{ w.Coal }}</td>
+                            <td>{{ w.Gas }}</td>
+                            <td>{{ w.Oil }}</td>
+                            <td>{{ w.Hydro }}</td>
+                            <td>{{ w.Renewable }}</td>
+                            <td>{{ w.Nuclear }}</td>
+                        </tr>
+                    {% endfor %}
+                </table>
+        </div>
+        <div class="table">
+            <h3> Aperçu de la Table Country: </h3>
+                <table class="center" border="1" cellpadding="5" cellspacing="5">
+                    {% for c in c_headers %}
+                        <th>{{ c }}</th>
+                    {% endfor %}
+                    {% for c in country %}
+                        <tr>
+                            <td>{{ c.Country }}</td>
+                            <td>{{ c.Coal }}</td>
+                            <td>{{ c.Gas }}</td>
+                            <td>{{ c.Oil }}</td>
+                            <td>{{ c.Hydro }}</td>
+                            <td>{{ c.Renewable }}</td>
+                            <td>{{ c.Nuclear }}</td>
+                        </tr>
+                    {% endfor %}
+                </table>
+        </div>
+    </div>
+    <h2> Observations: </h2>
+        {% for line in observation %}
+        <p>{{ line }}</p>
+        {% endfor %}
+    <h2> Calculer et afficher l'émission totale des différentes sources d’un pays (ou région) sélectionné(e): </h2> 
+        <form action="/details" method="POST">
+                <SELECT class="list" name="country">
+                {% for c in countryList %}
+                    <option value="{{ c }}">{{ c }}</option>
+                {% endfor %}
+                </SELECT>
+            <button type="submit" class="btn">Submit</button>
+        </form>
+    <h2> Calculer et afficher l’émission totale annuelle pour un pays (ou région) selectionné(e): </h2>
+    <form action="/year" method="POST">
+        <SELECT class="list" name="country">
+        {% for c in countryList %}
+            <option value="{{ c }}">{{ c }}</option>
+        {% endfor %}
+        </SELECT>
+        <input type="number" name="electricity_consumption" placeholder="electricity consumption (kw)">
+        <button type="submit" class="btn">Submit</button>
+    </form>
+{% endblock %}
