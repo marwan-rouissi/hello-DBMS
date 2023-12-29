@@ -11,7 +11,7 @@ D’après ces prévisions, le volume de données générées dans le monde devr
   - Une Veille scientifique sur les éléments composant les sciences de la donnée et donnée de manière plus vaste.
 -  hello-SQL : un ensemble de 8 jobs visant à s'exercer sur SQL.
 - big-job (application Flask): un mini projet visant à créer un outil interactif pour estimer et réduire l'empreinte carbone liée à la production d'électricité.
-- 2 job bonus : + de SQL.
+- bonus : 2 jobs bonus (+ de SQL).
 
 ## Veille scientifique
 
