@@ -9,8 +9,8 @@ D’après ces prévisions, le volume de données générées dans le monde devr
 ## Contenu du projet:
 - Dans le ReadMe:
   - Une Veille scientifique sur les éléments composant les sciences de la donnée et donnée de manière plus vaste.
-- Fichiers (.sql) : un ensemble de 8 jobs visant à s'exercer sur SQL.
-- Big Job (application Flask): un mini projet visant à créer un outil interactif pour estimer et réduire l'empreinte carbone liée à la production d'électricité.
+-  hello-SQL : un ensemble de 8 jobs visant à s'exercer sur SQL.
+- big-job (application Flask): un mini projet visant à créer un outil interactif pour estimer et réduire l'empreinte carbone liée à la production d'électricité.
 - 2 job bonus : + de SQL.
 
 ## Veille scientifique
@@ -187,12 +187,20 @@ NATURAL JOIN table2`
 
 ## Big Job : Calculateur d'Empreinte Carbone
 ![image](https://github.com/marwan-rouissi/hello-DBMS/assets/115158061/62406f56-c1d1-4b90-bcd6-fd2f3efbc1f6)
+### Réalisé avec:
+* ![Python](https://a11ybadges.com/badge?logo=python)
+* ![Flask](https://a11ybadges.com/badge?logo=flask)
+* ![MySQL](https://a11ybadges.com/badge?logo=mysql)
 
 ### Prérequis:
-installer les modules requis:
+* Installez les modules requis:
   ```sh
   pip install -r requirements.txt
   ```
+
+* Assurez vous également de modifier (si nécéssaire) la fonction `connect_db()` du fichier `app.py` afin que celle-ci corresponde bien à la connexion de votre base de données.   
+![image](https://github.com/marwan-rouissi/hello-DBMS/assets/115158061/41823639-27ec-4a6f-8f05-4b10ef38b9f5)
+
   
 ## Resources :
 - [Volume of data/information created, captured, copied, and consumed worldwide from 2010 to 2020, with forecasts from 2021 to 2025](https://www.statista.com/statistics/871513/worldwide-data-created/)
