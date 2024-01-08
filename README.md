@@ -200,6 +200,8 @@ NATURAL JOIN table2`
 
 * Assurez vous également de modifier (si nécéssaire) la fonction `connect_db()` du fichier `app.py` afin que celle-ci corresponde bien à la connexion de votre base de données.   
 ![image](https://github.com/marwan-rouissi/hello-DBMS/assets/115158061/41823639-27ec-4a6f-8f05-4b10ef38b9f5)
+* Votre base de données `carbonfootprint` se compose de 2 tables:
+  	- Veuillez vous référer au fichier `carbonfootprint.sql` pour en connaître la structure.
 
   
 ## Resources :
